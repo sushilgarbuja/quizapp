@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* .app:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+} */
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.category-btn {
+  background: #001e4d;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 0;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.category-btn:hover {
+  background: #002b75;
+}
+
+.quiz {
+  padding: 20px 0;
+}
+
+.quiz h2 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #f1f1f1;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 2px solid #001e4d;
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover:not([disabled]) {
+  background: #001e4d;
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+#next-btn {
+  background: #001e4d;
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 8px;
+  border: 0;
+  padding: 12px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#next-btn:hover {
+  background: #002b75;
+}
+
+.correct {
+  background: #9aeabc !important;
+  color: #001e4d !important;
+}
+
+.incorrect {
+  background: #ff9393 !important;
+  color: #001e4d !important;
+}
+
+.img img {
+  max-width: 400px;
+  height: auto;
+}

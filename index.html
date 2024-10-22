@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="img">
+        <img src="ss.png" alt="logo" />
+      </div>
+      <hr />
+      <div class="category-buttons">
+        <button class="category-btn" data-category="general">
+          General Knowledge
+        </button>
+        <button class="category-btn" data-category="computer">Computer</button>
+      </div>
+
+      <div class="quiz">
+        <h2 id="question">Question goes here</h2>
+        <div id="answer-button" class="btn-grid">
+          <!-- Answer buttons will be injected here by JS -->
+        </div>
+        <button id="next-btn" class="next-btn">Next</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
